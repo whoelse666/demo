@@ -3,25 +3,25 @@ import { RouterLink, RouterView } from 'vue-router';
 import HelloWorld from './components/HelloWorld.vue';
 import MyTable from './components/MyTable.vue';
 import MyPagetion from './components/MyPagetion.vue';
+
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <MyPagetion />
-
+      <!-- <MyPagetion /> -->
       <!-- <HelloWorld msg="You did it!" />
       <MyTable /> -->
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/vlist">vlist</RouterLink>
       </nav>
     </div>
   </header>
 
-  <!-- <RouterView /> -->
+  <RouterView />
 </template>
 
 <style scoped>
